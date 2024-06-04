@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
                 String username = usernameEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
 
-                // 创建一个Intent对象，用于跳转到主页面
                 Intent intent = new Intent(MainActivity.this, HomePageActivity.class);
                 intent.putExtra("username", username);
                 intent.putExtra("password", password);

@@ -17,13 +17,12 @@ public class HomePageActivity extends AppCompatActivity {
 
         welcomeTextView = findViewById(R.id.welcomeTextView);
 
-        // 获取从登陆页面传递过来的用户名和密码
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String username = extras.getString("username");
             String password = extras.getString("password");
 
-            // 在主页面上显示用户名和密码
+            // 显示用户名和密码
             welcomeTextView.setText("欢迎，" + username + "！你的密码是：" + password);
         }
     }
